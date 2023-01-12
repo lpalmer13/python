@@ -1,0 +1,5 @@
+print('Please enter the following information:')
+print()
+name = input ('First name:')
+name = input ('Last name:')
+email = input ('Email address:')
