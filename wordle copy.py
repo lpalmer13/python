@@ -9,6 +9,7 @@ count = 0
 while guess != word:
     print()
     guess = input('What is your guess? ').lower()
+
     # if guess != word:
     #     print('Your guess was not correct.')
     #     count += 1
@@ -25,6 +26,7 @@ while guess != word:
             print(g.lower(), end=' ')
         else:
             print('_', end=' ')
+            count += 1
 print()
 print(f'Congratulations! You guessed it in {count} times!')
     

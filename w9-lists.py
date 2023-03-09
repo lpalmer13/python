@@ -1,18 +1,18 @@
-# list = [12, 3,4, 45] #DON'T DO THIS!!!
-movies = list()
-movies = [
-    "Batman"
-    "Interstellar"
-    "Hot Rod"
-    "Inception"
-]
-movies.append("Iron Man")
-print("Movies in the list:")
-for movies in movies:
-    print(f"\t-{movies}")
-print(movies)
+# # list = [12, 3,4, 45] #DON'T DO THIS!!!
+# movies = list()
+# movies = [
+#     "Batman"
+#     "Interstellar"
+#     "Hot Rod"
+#     "Inception"
+# ]
+# movies.append("Iron Man")
+# print("Movies in the list:")
+# for movies in movies:
+#     print(f"\t-{movies}")
+# print(movies)
 
-# Fast Food Menu Demo
+print('Fast Food Menu Demo')
 
 print()
 
