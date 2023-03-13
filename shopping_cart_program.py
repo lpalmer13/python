@@ -14,13 +14,13 @@ selections = []
 
 cart = []
 prices = []
-total_number_of_items = []
+total_quantity = []
 total_cost = []
 
 while selection != 5:
     if selection > 5:
         print()
-        print("Please only select a number between '1' and '5'. ")
+        print("Please only select a number between '1' and '5'.")
 
     print()
     print('Please select one of the following: ')
@@ -34,12 +34,12 @@ while selection != 5:
         print()
         add = input('What item would you like to add? ')
         price = float(input(f"What is the price of '{add}'? $"))
-        number_of_items = int(input('How many do you want? '))
-        total_price = (price) * (number_of_items)
+        quantity = int(input('How many do you want? '))
+        total_price = (price) * (quantity)
         
         cart.append(add)
         prices.append(price)
-        total_number_of_items.append(number_of_items)
+        total_quantity.append(quantity)
         total_cost.append(total_price)
 
         print(f"'{add}' has been added to the cart.")
@@ -48,24 +48,30 @@ while selection != 5:
         print()
         print('The contents of the shopping cart are:')
         for i in range(len(cart)):
+            total_price = total_cost[i]
+            quantity = total_quantity[i]
             price = prices[i]
-            item = cart[i]
-            print(f'{i + 1}. {item} - ${price:.2f}')
+            add = cart[i]
+            print(f'{i + 1}. {add} x{quantity} - ${total_price:.2f}')
 
     elif selection == 3:
         print()
         remove = int(input('Which item would you like to remove? '))
         for i in range(len(cart)):
+            item = total_cost[i]
+            item = total_quantity[i]
             item = prices[i]
             item = cart[i]
         cart.pop(remove - 1)
         prices.pop(remove - 1)
+        total_quantity.pop(remove - 1)
+        total_cost.pop(remove - 1)
         print(f"'{item}' has been removed from cart.")
 
     elif selection == 4:
         print()
         subtotal = 0
-        for number in prices:
+        for number in total_cost:
             subtotal += number
         print(f'The subtotal price of the items in the shopping cart is ${subtotal:.2f}')
         print()
