@@ -20,7 +20,7 @@ total_cost = []
 while selection != 5:
     if selection > 5:
         print()
-        print("Please only select a number between '1' and '5'.")
+        print("Please only select a number between '1' and '5'. ")
 
     print()
     print('Please select one of the following: ')
@@ -56,6 +56,15 @@ while selection != 5:
 
     elif selection == 3:
         print()
+        print('The contents of the shopping cart are:')
+        for i in range(len(cart)):
+            total_price = total_cost[i]
+            quantity = total_quantity[i]
+            price = prices[i]
+            add = cart[i]
+            print(f'{i + 1}. {add} x{quantity} - ${total_price:.2f}')
+
+        print()
         remove = int(input('Which item would you like to remove? '))
         for i in range(len(cart)):
             item = total_cost[i]
@@ -67,6 +76,15 @@ while selection != 5:
         total_quantity.pop(remove - 1)
         total_cost.pop(remove - 1)
         print(f"'{item}' has been removed from cart.")
+
+        print()
+        print('The contents of the shopping cart are:')
+        for i in range(len(cart)):
+            total_price = total_cost[i]
+            quantity = total_quantity[i]
+            price = prices[i]
+            add = cart[i]
+            print(f'{i + 1}. {add} x{quantity} - ${total_price:.2f}')
 
     elif selection == 4:
         print()
