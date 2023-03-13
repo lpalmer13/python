@@ -19,7 +19,7 @@ print('The shopping list with indexes is:')
 
 for i in range(len(list)):
     item = list[i]
-    print(f'{i}. {item}')
+    print(f'{i + 1}. {item}')
 
 print()
 
