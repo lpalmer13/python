@@ -24,7 +24,7 @@ with open("python/w12-data.csv") as file:
 
         if high_votes > votes:
             high_votes = votes
-            hit_movie = votes
+            hit_movie = movie
         
         if genre.upper() == user_genre.upper():
             if g_high < votes:
