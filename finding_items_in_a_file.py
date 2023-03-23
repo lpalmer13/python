@@ -13,4 +13,5 @@ with open("python/books_and_chapters.txt") as data:
             largest_number_of_chapters = chapter
             largest_book = book
 
-    print(f'{largest_book} {largest_number_of_chapters}')
+    print(f'The book with the most chapters is: {largest_book}')
+    print(f'It has {largest_number_of_chapters} chapters.')
