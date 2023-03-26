@@ -10,7 +10,7 @@ while guess != word:
     print()
     guess = input('What is your guess? ').lower()
     count += 1
-    
+
     for i in range(number_of_letters):
         w = word[i]
         g = guess[i]
@@ -23,4 +23,3 @@ while guess != word:
             
 print()
 print(f'Congratulations! You guessed it in {count} times!')
-    
