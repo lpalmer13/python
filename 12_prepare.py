@@ -1,5 +1,7 @@
 youngest_age = 9999
 youngest_person = ''
+oldest_age = 0
+oldest_person = ''
 
 people = [
     "Stephanie 36",
@@ -19,4 +21,8 @@ for person in people:
     if age < youngest_age:
         youngest_age = age
         youngest_person = name
+    if age > oldest_age:
+        oldest_age = age
+        oldest_person = name
 print(f'The youngest person is: {youngest_person} with an age of {youngest_age}')
+print(f'The oldest person is: {oldest_person} with an age of {oldest_age}')
