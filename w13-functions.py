@@ -1,16 +1,16 @@
-# tithe = 20
-# def get_income():
-#     income = float(input('What is your income? '))
+tithe = 20
+def get_income():
+    income = float(input('What is your income? '))
 
-# def compute_tithing():
-#     income = float(input('What is your income? '))
-#     tithe = 0.1 * income
-#     return tithe
+def compute_tithing():
+    income = float(input('What is your income? '))
+    tithe = 0.1 * income
+    return tithe
 
-# # print(compute_tithing(200))
-# # print(compute_tithing(150))
-# # print(compute_tithing(0.35))
-# print(compute_tithing(get_income()))
+# print(compute_tithing(200))
+# print(compute_tithing(150))
+# print(compute_tithing(0.35))
+print(compute_tithing(get_income()))
 
 def ask_yes_no(prompt, affirmative = 'YES', negative = 'NO'):
     response = ''
