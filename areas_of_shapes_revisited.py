@@ -4,11 +4,9 @@ def compute_area_square(square):
     area = square ** 2
     return area
 
-
 side = float(input('What is the length of a side of the square? '))
 area_square = compute_area_square(side)
 print(area_square)
-
 
 def compute_area_rectangle(length, width):
     area = length * width
